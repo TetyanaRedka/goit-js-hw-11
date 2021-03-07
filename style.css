@@ -1,0 +1,25 @@
+.timer {
+  display: flex;
+}
+
+.field {
+  margin: 5px;
+  background-color: coral;
+  border-style: double;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px gray;
+  height: 70px;
+  width: 100px;
+}
+
+.value {
+  display: block;
+  text-align: center;
+  font-size: 35px;
+}
+
+.label {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
