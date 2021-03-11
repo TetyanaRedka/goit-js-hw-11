@@ -13,12 +13,14 @@ startBtn.addEventListener('click', () => {
   if (checkedPoint) return;
   intervalID = setInterval(() => {
     checkedPoint = true;
+    startBtn.setAttribute('disabled', 'disabled');
     document.body.style.background = colors[randomIntegerFromInterval(0, colors.length - 1)];
   }, 1000);
 });
 
 stopBtn.addEventListener('click', () => {
   clearInterval(intervalID);
+  startBtn.removeAttribute('disabled', 'disabled');
   checkedPoint = false;
 });
 

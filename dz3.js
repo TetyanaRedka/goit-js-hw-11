@@ -18,6 +18,9 @@ class CountdownTimer {
   }
 
   timer() {
+    const currentTime = new Date();
+    const interval = this.targetDate - currentTime;
+    this.createWebTimet(interval);
     setInterval(() => {
       const currentTime = new Date();
       const interval = this.targetDate - currentTime;
